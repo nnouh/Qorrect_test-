@@ -1,0 +1,27 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
+public class SummerDress extends PageBase{
+	WebDriver driver;
+	public SummerDress(WebDriver driver)
+	{
+		super(driver);
+	}
+	
+	//private By sumerdres = By.linkText("Dresses");
+	WebElement summer = driver.findElement(By.xpath("//*[contains(text(),'Dresses') and @title='Dresses'][1]"));
+	
+	
+	Actions action = new Actions(driver);
+	
+public void sumerDressClick() {
+	 action.moveToElement(summer).build().perform();
+	 driver.findElement(By.xpath("//*[@id=\"block_top_menu\"]/ul/li[2]/ul/li[3]/a"));
+	
+}
+
+}

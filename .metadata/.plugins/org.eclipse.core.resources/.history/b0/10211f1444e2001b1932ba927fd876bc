@@ -1,0 +1,22 @@
+package pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class SummerDress extends PageBase{
+	WebDriver driver;
+	public SummerDress(WebDriver driver)
+	{
+		super(driver);
+	}
+	
+	//private By sumerdres = By.linkText("Dresses");
+	private By sumerdres = By.xpath("//*[contains(text(),'Dresses') and @title='Dresses'][1]");
+	
+	
+	Actions actions = new Actions(driver);
+	actions
+
+
+}

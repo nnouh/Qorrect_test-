@@ -1,0 +1,22 @@
+package tests;
+
+
+import org.testng.annotations.Test;
+
+
+import pages.Login;
+import pages.MyAccount;
+
+
+
+@Test
+public class Group2Test extends TestBase {
+ 
+  
+	@Test
+	public void testLogine() {
+		Login logObj = new Login(driver);
+		logObj.clickLogIn(pwT);
+		
+	}
+}
